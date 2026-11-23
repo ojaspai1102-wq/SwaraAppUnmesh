@@ -1,0 +1,27 @@
+SWARA INSTITUTE — SHARING THE APP
+
+To email the browser demo:
+1. Attach Swara-Institute-Shareable.html to your email.
+2. The recipient should download the file, then open it in Chrome or Edge.
+3. The app opens with fictional sample students, classes, fees and concerts.
+4. The app works offline and requires no installation.
+
+This is a browser demo, not a Windows EXE or an Android installer. It does not
+include secure PIN accounts, encrypted storage/backups or Android phone alerts.
+Demo changes are saved locally in the browser when browser storage is available.
+The shared HTML file contains only app code and generated sample records; it
+does not contain records you subsequently edit or save in your browser.
+Use Settings to export demo data separately if needed. JSON exports are plain
+text and should not contain sensitive institute records.
+
+To install the Android app:
+Use Swara-Institute-1.1.apk. Upload it to your cloud drive and share a download
+link, or copy the APK to the phone by USB. Open it from Files on Android and
+complete the installation prompts. See INSTALL.md for the complete guide.
+
+Gmail blocks .apk and .exe attachments, including those inside archives.
+An HTML app is a separate browser version and contains no embedded installer.
+Email providers may apply additional attachment filtering; if an HTML file is
+rejected, use a cloud-drive download link rather than changing its extension.
+
+Gmail reference: https://support.google.com/mail/answer/6590?hl=en

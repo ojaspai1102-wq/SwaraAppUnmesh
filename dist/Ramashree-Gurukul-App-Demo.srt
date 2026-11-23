@@ -1,0 +1,406 @@
+1
+00:00:00,000 --> 00:00:06,499
+Welcome to this demonstration for the owner of Ramashree Gurukul
+Music Institute. We will explore every menu
+
+2
+00:00:06,499 --> 00:00:09,557
+and connect each one to a business benefit.
+
+3
+00:00:10,267 --> 00:00:17,462
+All students, payments and concerts shown here are fictional. These
+are the actual app interface screens, captured
+
+4
+00:00:17,462 --> 00:00:21,694
+in a browser preview, rather than on an Android phone.
+
+5
+00:00:22,400 --> 00:00:28,923
+Home gives the owner a quick view of active students, fee
+collections, pending fees and event earnings.
+
+6
+00:00:29,600 --> 00:00:35,938
+Filter by month, course, trainer or student status to review a
+specific part of the institute.
+
+7
+00:00:36,600 --> 00:00:43,828
+Upcoming classes, concerts and student journeys help you decide what
+needs attention before the teaching day begins.
+
+8
+00:00:44,533 --> 00:00:53,735
+Students brings enrolment status, assigned trainers, courses and
+learning progress together. Search and status filters make follow-up
+
+9
+00:00:53,735 --> 00:00:54,276
+easier.
+
+10
+00:00:54,933 --> 00:01:02,371
+Open a student to review contact details, guardian information and
+preferences. This gives your team context when
+
+11
+00:01:02,371 --> 00:01:04,121
+speaking with a parent.
+
+12
+00:01:04,800 --> 00:01:12,245
+Learning progress and the session timeline show what has been
+completed and what remains. This supports better
+
+13
+00:01:12,245 --> 00:01:14,872
+progress discussions and continuity between classes.
+
+14
+00:01:15,533 --> 00:01:23,696
+The enrolment form captures music interests, class preferences,
+assigned trainer, work packets, fee terms and a learning
+
+15
+00:01:23,696 --> 00:01:24,176
+goal.
+
+16
+00:01:24,867 --> 00:01:31,410
+Keeping these details together can reduce repeated questions and
+help the owner plan a suitable learning path.
+
+17
+00:01:32,067 --> 00:01:40,936
+Sessions tracks planned, completed, missed, rescheduled and
+cancelled classes. The planned filter helps identify the next
+classes
+
+18
+00:01:40,936 --> 00:01:41,979
+to deliver.
+
+19
+00:01:42,667 --> 00:01:50,338
+Mark complete opens the class record with actual date and
+attendance. Notes, feedback, assignments and the next
+
+20
+00:01:50,338 --> 00:01:52,594
+action preserve the teaching context.
+
+21
+00:01:53,267 --> 00:02:00,781
+Alternative dates and a reschedule reason help track changes. This
+can improve class coordination and make delivered
+
+22
+00:02:00,781 --> 00:02:02,549
+sessions easier to review.
+
+23
+00:02:03,200 --> 00:02:11,336
+Fees separates paid, part paid, pending and overdue plans. Each
+record shows the amount collected and the
+
+24
+00:02:11,336 --> 00:02:12,293
+remaining balance.
+
+25
+00:02:13,000 --> 00:02:21,619
+Filter overdue fees to focus collection follow-ups. Fee plans
+support discounts and due dates, so agreed terms
+
+26
+00:02:21,619 --> 00:02:22,633
+remain visible.
+
+27
+00:02:23,333 --> 00:02:29,441
+Open a fee record to review payment receipts and the balance. This
+can reduce uncertainty when a
+
+28
+00:02:29,441 --> 00:02:31,956
+parent asks what has already been paid.
+
+29
+00:02:32,667 --> 00:02:38,705
+Here we record a fictional five hundred rupee UPI payment with a
+receipt number and a reference.
+
+30
+00:02:39,400 --> 00:02:46,355
+After saving, the balance and receipt history update. The app
+records a payment made elsewhere; this version
+
+31
+00:02:46,355 --> 00:02:49,628
+does not collect money through an online gateway.
+
+32
+00:02:50,333 --> 00:02:59,229
+More opens six additional sections: People, Work packets, Concerts,
+Reminders, Reports and Settings. We will visit each
+
+33
+00:02:59,229 --> 00:03:00,276
+of them.
+
+34
+00:03:00,933 --> 00:03:08,863
+People has separate tabs for trainers and artists. Trainers shows
+expertise, available slots and the number of
+
+35
+00:03:08,863 --> 00:03:09,796
+assigned students.
+
+36
+00:03:10,467 --> 00:03:18,057
+A trainer profile includes workload and estimated commission.
+Commission uses collections from currently assigned students, so the
+
+37
+00:03:18,057 --> 00:03:21,629
+owner should review it before making a payout.
+
+38
+00:03:22,333 --> 00:03:29,136
+The Artists tab keeps vocalists, instrumentalists, accompanists and
+other performance roles together.
+
+39
+00:03:29,800 --> 00:03:39,237
+Profiles include expertise, availability, stage preferences and
+expected payout. This helps shortlist talent and prepare a realistic
+
+40
+00:03:39,237 --> 00:03:40,347
+event budget.
+
+41
+00:03:41,000 --> 00:03:49,758
+Work packets defines courses and packages with session counts and
+fees. The sample includes vocal, guitar, keyboard
+
+42
+00:03:49,758 --> 00:03:51,303
+and workshop offerings.
+
+43
+00:03:52,000 --> 00:04:00,279
+A work packet can specify duration, prerequisites, batch size,
+pricing type and special rules. Clear terms help
+
+44
+00:04:00,279 --> 00:04:03,687
+staff explain the offer consistently at enrolment.
+
+45
+00:04:04,400 --> 00:04:12,343
+Concerts keeps program dates, venue, organizer and participating
+artists, students and trainers in one record.
+
+46
+00:04:13,000 --> 00:04:20,461
+The financial view separates billed earnings from cash actually
+received, and shows total costs and the organizer
+
+47
+00:04:20,461 --> 00:04:25,727
+balance. This distinction helps the owner assess both profitability
+and cash flow.
+
+48
+00:04:26,400 --> 00:04:34,093
+The expense ledger records sound, venue, travel, marketing and
+artist payouts with dates and references.
+
+49
+00:04:34,800 --> 00:04:40,543
+Use Record expense or payout to capture each paid cost and link an
+artist when relevant. The
+
+50
+00:04:40,543 --> 00:04:44,598
+business benefit is a clearer view of where event revenue is going.
+
+51
+00:04:45,267 --> 00:04:52,987
+Reminders gathers items due soon or needing attention. The Fee and
+Class tabs help prioritise collection calls
+
+52
+00:04:52,987 --> 00:04:54,349
+and upcoming lessons.
+
+53
+00:04:55,000 --> 00:05:00,083
+The Assignment and Event tabs support learning follow-through and
+program preparation.
+
+54
+00:05:00,800 --> 00:05:08,278
+Prepare message creates editable reminder text. In the Android app,
+you choose a messaging app and confirm
+
+55
+00:05:08,278 --> 00:05:12,237
+the recipient and delivery yourself; sending is not automatic.
+
+56
+00:05:12,933 --> 00:05:21,112
+The Event tab surfaces upcoming programs. Combined with the other
+reminder categories, it helps the owner maintain
+
+57
+00:05:21,112 --> 00:05:23,036
+a practical follow-up routine.
+
+58
+00:05:23,733 --> 00:05:32,253
+Reports includes seven views. Business summary brings key activity
+and financial measures together, with a month filter
+
+59
+00:05:32,253 --> 00:05:33,756
+for periodic reviews.
+
+60
+00:05:34,467 --> 00:05:42,184
+Student progress compares completed sessions with the target and
+remaining sessions. Use it to review learning delivery
+
+61
+00:05:42,184 --> 00:05:43,999
+and guide parent conversations.
+
+62
+00:05:44,667 --> 00:05:53,755
+Trainer workload shows assigned students, delivered and pending
+sessions, collections and estimated commission. It supports capacity
+planning
+
+63
+00:05:53,755 --> 00:05:55,359
+and payout review.
+
+64
+00:05:56,067 --> 00:06:05,424
+Fee balances consolidates charges, discounts, collections and
+outstanding amounts. This gives the owner a structured list for
+
+65
+00:06:05,424 --> 00:06:06,524
+collection follow-ups.
+
+66
+00:06:07,200 --> 00:06:15,224
+Course revenue groups financial activity by work packet. It helps
+compare collections and balances across offerings when
+
+67
+00:06:15,224 --> 00:06:17,113
+reviewing pricing and demand.
+
+68
+00:06:17,800 --> 00:06:26,117
+Event profitability compares revenue, costs, earnings and cash
+surplus. Use it to review which programs are financially
+
+69
+00:06:26,117 --> 00:06:29,542
+worthwhile and which organizer payments remain pending.
+
+70
+00:06:30,200 --> 00:06:39,952
+Artist payouts summarises recorded payments to performers. This
+supports payout reconciliation and conversations with participating
+artists.
+
+71
+00:06:40,667 --> 00:06:47,267
+Every report offers CSV export for Excel and Save as PDF. These help
+share a review with
+
+72
+00:06:47,267 --> 00:06:49,984
+an accountant or keep a periodic record.
+
+73
+00:06:50,667 --> 00:06:59,760
+Settings includes institute naming, PIN changes, locking and local
+account management. The Android app supports Owner, Admin,
+
+74
+00:06:59,760 --> 00:07:04,039
+Trainer, Artist, Student or Parent, and Finance roles.
+
+75
+00:07:04,733 --> 00:07:11,466
+Linked roles see their permitted records. Accounts belong to this
+phone and do not provide remote access
+
+76
+00:07:11,466 --> 00:07:13,446
+or synchronise with another device.
+
+77
+00:07:14,133 --> 00:07:22,985
+The Android app stores records in an encrypted local file. Settings
+offers password-protected backup and restore, including
+
+78
+00:07:22,985 --> 00:07:24,026
+local accounts.
+
+79
+00:07:24,733 --> 00:07:31,470
+You can also enable a local daily reminder summary. Android may
+delay alerts to save battery. These
+
+80
+00:07:31,470 --> 00:07:37,810
+phone features are shown here as interface options and were not
+executed in this browser recording.
+
+81
+00:07:38,467 --> 00:07:46,077
+Getting started lets the owner load or remove sample records. Remove
+fictional data before adding real institute
+
+82
+00:07:46,077 --> 00:07:46,525
+records.
+
+83
+00:07:47,200 --> 00:07:53,701
+Audit history records changes with the user and time. It gives the
+owner a useful trail when
+
+84
+00:07:53,701 --> 00:07:54,848
+reviewing what changed.
+
+85
+00:07:55,533 --> 00:08:03,653
+For Ramashree Gurukul, the value is a connected view of students,
+teaching delivery, collections and performances, with
+
+86
+00:08:03,653 --> 00:08:05,086
+fewer scattered records.
+
+87
+00:08:05,800 --> 00:08:14,474
+The current app works offline on one Android device. Multi-device
+synchronisation, online payments and automatic message delivery
+
+88
+00:08:14,474 --> 00:08:20,087
+would require a future backend integration. This concludes the
+owner’s walkthrough.

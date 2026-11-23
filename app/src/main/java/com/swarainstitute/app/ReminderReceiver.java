@@ -1,0 +1,20 @@
+package com.swarainstitute.app;
+
+import android.Manifest;
+import android.app.*;
+import android.content.*;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import org.json.*;
+import java.time.LocalDate;
+import java.util.Calendar;
+
+public class ReminderReceiver extends BroadcastReceiver {
+    static void schedule(Context c){NotificationManager nm=(NotificationManager)c.getSystemService(Context.NOTIFICATION_SERVICE);nm.createNotificationChannel(new NotificationChannel("swara-reminders","Institute reminders",NotificationManager.IMPORTANCE_DEFAULT));Intent i=new Intent(c,ReminderReceiver.class);PendingIntent p=PendingIntent.getBroadcast(c,0,i,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);Calendar next=Calendar.getInstance();next.set(Calendar.HOUR_OF_DAY,9);next.set(Calendar.MINUTE,0);next.set(Calendar.SECOND,0);if(next.getTimeInMillis()<=System.currentTimeMillis())next.add(Calendar.DAY_OF_YEAR,1);((AlarmManager)c.getSystemService(Context.ALARM_SERVICE)).setInexactRepeating(AlarmManager.RTC_WAKEUP,next.getTimeInMillis(),AlarmManager.INTERVAL_DAY,p);}
+    @Override public void onReceive(Context c,Intent intent){if(!c.getSharedPreferences("security",Context.MODE_PRIVATE).getBoolean("alerts",false))return;if(Build.VERSION.SDK_INT>=33&&c.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)!=PackageManager.PERMISSION_GRANTED)return;PendingResult pending=goAsync();new Thread(()->{try{JSONObject root=new SecureStore(c).read(),user=null;String username=c.getSharedPreferences("security",Context.MODE_PRIVATE).getString("alertUser","");JSONArray accounts=root.getJSONArray("accounts");for(int i=0;i<accounts.length();i++)if(accounts.getJSONObject(i).getString("username").equals(username))user=accounts.getJSONObject(i);if(user==null)return;JSONObject db=Database.view(root.getJSONObject("state"),user.getString("role"),user.optString("entityId"));LocalDate today=LocalDate.now(),cutoff=today.plusDays(3);int fees=0,classes=0,assignments=0,events=0;
+        JSONArray fs=db.getJSONArray("fees");for(int i=0;i<fs.length();i++){JSONObject f=fs.getJSONObject(i);double collected=0;JSONArray payments=f.getJSONArray("payments");for(int p=0;p<payments.length();p++)collected+=payments.getJSONObject(p).optDouble("amount",0);if(f.getDouble("amount")-f.optDouble("discount",0)-collected>.005&&!LocalDate.parse(f.getString("dueDate")).isAfter(cutoff))fees++;}
+        JSONArray ss=db.getJSONArray("sessions");for(int i=0;i<ss.length();i++){JSONObject s=ss.getJSONObject(i);String status=s.getString("status");LocalDate date=LocalDate.parse(s.getString("plannedDate"));if(!status.equals("Completed")&&!status.equals("Cancelled")&&!date.isBefore(today)&&!date.isAfter(cutoff))classes++;if(status.equals("Completed")&&!s.optString("assignment").isEmpty()&&!s.optBoolean("assignmentDone"))assignments++;}
+        JSONArray es=db.getJSONArray("events");for(int i=0;i<es.length();i++){JSONObject e=es.getJSONObject(i);LocalDate date=LocalDate.parse(e.getString("date"));if((e.getString("status").equals("Planned")||e.getString("status").equals("Confirmed"))&&!date.isBefore(today)&&!date.isAfter(cutoff))events++;}
+        if(fees+classes+assignments+events==0)return;PendingIntent launch=PendingIntent.getActivity(c,1,new Intent(c,MainActivity.class),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);Notification.Builder b=new Notification.Builder(c,"swara-reminders").setSmallIcon(R.drawable.ic_notification).setContentTitle("Your institute needs attention").setContentText(fees+" fee reminders · "+classes+" classes · "+assignments+" assignments · "+events+" events").setContentIntent(launch).setAutoCancel(true).setVisibility(Notification.VISIBILITY_PRIVATE).setPublicVersion(new Notification.Builder(c,"swara-reminders").setSmallIcon(R.drawable.ic_notification).setContentTitle("Swara Institute").setContentText("Unlock to view your reminders.").build());((NotificationManager)c.getSystemService(Context.NOTIFICATION_SERVICE)).notify(1,b.build());
+        }catch(Exception ignored){}finally{pending.finish();}}).start();}
+}
